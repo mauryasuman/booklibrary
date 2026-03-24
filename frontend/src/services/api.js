@@ -5,7 +5,7 @@
 
 import axios from 'axios';
 
-const API_URL = process.env.REACT_APP_API_URL;
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
 
 // Create axios instance
 const api = axios.create({
@@ -99,7 +99,7 @@ export const createBook = async (bookData) => {
     console.error('❌ Error creating book:', error.response?.data || error.message);
     return error.response?.data || { success: false, message: 'Error creating book' };
   }
-};;
+};
 
 /**
  * Update a book
