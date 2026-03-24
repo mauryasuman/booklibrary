@@ -1,0 +1,191 @@
+/**
+ * Navbar Component Styles
+ */
+
+.navbar {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  padding: 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.navbar-logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-logo:hover {
+  color: #3498db;
+  transform: scale(1.05);
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 5px;
+  align-items: center;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 12px 18px;
+  border-radius: 5px;
+  display: block;
+}
+
+.nav-link:hover {
+  background-color: rgba(52, 152, 219, 0.3);
+  color: #3498db;
+}
+
+.nav-user {
+  color: white;
+  font-weight: 600;
+  padding: 12px 18px;
+  background: rgba(52, 152, 219, 0.2);
+  border-radius: 5px;
+}
+
+.nav-button {
+  padding: 10px 18px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-btn {
+  background-color: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+
+.login-btn:hover {
+  background-color: transparent;
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.register-btn {
+  background-color: #27ae60;
+  color: white;
+  border-color: #27ae60;
+}
+
+.register-btn:hover {
+  background-color: transparent;
+  color: #27ae60;
+  border-color: #27ae60;
+}
+
+.logout-btn {
+  background-color: #e74c3c;
+  color: white;
+  border-color: #e74c3c;
+}
+
+.logout-btn:hover {
+  background-color: transparent;
+  color: #e74c3c;
+  border-color: #e74c3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-container {
+    height: auto;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+  }
+
+  .navbar-logo {
+    font-size: 22px;
+  }
+
+  .nav-menu {
+    gap: 8px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-link,
+  .nav-button,
+  .nav-user {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-container {
+    padding: 8px 10px;
+  }
+
+  .navbar-logo {
+    font-size: 18px;
+  }
+
+  .nav-menu {
+    gap: 5px;
+  }
+
+  .nav-link,
+  .nav-button,
+  .nav-user {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-menu {
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
